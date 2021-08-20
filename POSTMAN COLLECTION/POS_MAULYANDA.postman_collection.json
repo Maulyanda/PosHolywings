@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "34c1200b-5620-440d-a78d-c3d3b679332c",
+		"name": "POS_MAULYANDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Membuat Customer Baru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomor_handphone",
+							"value": "08111361613",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Nanda",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Aceh",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Membuat Item Baru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Monitor LG",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "PRD-MONITOR-1",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "3000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/item/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"item",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Membuat Transaksi Baru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomor_handphone",
+							"value": "08111361613",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "1-2.3-3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/transaksi/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transaksi",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mengambil data 1 Transaksi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "kode_transaksi",
+							"value": "TRX-20082021000004",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/transaksi/show",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transaksi",
+						"show"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
