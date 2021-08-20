@@ -8,7 +8,7 @@ Pembuatan API POS ini menggunakan database MySQL dan Framework Laravel sebagai k
 Maulyanda
 ###################
 
-`My GITHUB <https://codeigniter.com/user_guide/installation/index.html>`\_
+`My LINKEDIN : https://www.linkedin.com/in/maulyanda/`
 
 Nomor 1 : Untuk desain database (ERD) dapat dilihat pada folder ERD. Dimana desain nya mengggunakan POWER DESIGNER
 Nomor 2, 3, 4 dan 5 : Pembuatan API POS ini menggunakan LARAVEL.
